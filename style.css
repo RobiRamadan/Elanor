@@ -1,6 +1,10 @@
 a {
   text-decoration: none;
 }
+.navbar-toggler-icon {
+  filter: invert(1)!important;
+}
+
 .logo {
   font-family: "Recursive", sans-serif !important;
   font-optical-sizing: auto !important;
