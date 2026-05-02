@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Elanor - Checkout</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wdth,wght@0,5..1200,87.5,300..900;1,5..1200,87.5,300..900&family=Recursive:wght@300..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  
+  <body class="bg-dark">
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#"
+          ><h3 class="logo">Elanor</h3></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item p-2">
+              <a
+                class="nav-link fs-5 text-light active"
+                aria-current="page"
+                href="index copy.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link fs-5 text-light" href="koleksi copy.html">Collections</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link fs-5 text-light" href="berhasil.html"><i class="bi bi-person-circle text-white"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+    <div class="container py-5">
+      <div class="mb-4">
+        <a href="#" class="back-link""
+          ><i class="bi bi-arrow-left"></i> Back to Collections</a
+        >
+      </div>
+
+      <div class="row g-5">
+        <!-- LEFT: FORM -->
+        <div class="col-lg-7">
+          <!-- SHIPPING INFO -->
+          <div class="mb-5">
+            <div class="section-label">Shipping Information</div>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label class="form-label">First Name</label>
+                <input type="text" class="form-control" value="Alnia" />
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label">Last Name</label>
+                <input type="text" class="form-control" value="Roel. S" />
+              </div>
+              <div class="col-12">
+                <label class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  value="kelompok3@gmail.com"
+                />
+              </div>
+              <div class="col-12">
+                <label class="form-label">Phone Number</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="+1 000 000 0000"
+                />
+              </div>
+              <div class="col-12">
+                <label class="form-label">Street Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="123 Main Street, Apt 4B"
+                />
+              </div>
+              <div class="col-sm-5">
+                <label class="form-label">City</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="e.g. Jakarta"
+                />
+              </div>
+              <div class="col-sm-4">
+                <label class="form-label">Country</label>
+                <select class="form-select" id="countrySelect">
+                  <option value="">Select Country</option>
+                  <option>Australia</option>
+                  <option>Brazil</option>
+                  <option>Canada</option>
+                  <option>China</option>
+                  <option>Egypt</option>
+                  <option>France</option>
+                  <option>Germany</option>
+                  <option>India</option>
+                  <option>Indonesia</option>
+                  <option>Italy</option>
+                  <option>Japan</option>
+                  <option>Malaysia</option>
+                  <option>Mexico</option>
+                  <option>Netherlands</option>
+                  <option>New Zealand</option>
+                  <option>Nigeria</option>
+                  <option>Pakistan</option>
+                  <option>Philippines</option>
+                  <option>Poland</option>
+                  <option>Portugal</option>
+                  <option>Russia</option>
+                  <option>Saudi Arabia</option>
+                  <option>Singapore</option>
+                  <option>South Africa</option>
+                  <option>South Korea</option>
+                  <option>Spain</option>
+                  <option>Sweden</option>
+                  <option>Switzerland</option>
+                  <option>Thailand</option>
+                  <option>Turkey</option>
+                  <option>Ukraine</option>
+                  <option>United Arab Emirates</option>
+                  <option>United Kingdom</option>
+                  <option>United States</option>
+                  <option>Vietnam</option>
+                </select>
+              </div>
+              <div class="col-sm-3">
+                <label class="form-label">Postal Code</label>
+                <input type="text" class="form-control" placeholder="10001" />
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="saveAddr"
+                    checked
+                  />
+                  <label class="form-check-label" for="saveAddr"
+                    >Save this address for future purchases</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SHIPPING METHOD -->
+          <div class="mb-5">
+            <div class="section-label">Shipping Method</div>
+            <div class="d-flex flex-column gap-2">
+              <label
+                class="pay-tab selected d-flex align-items-center gap-3"
+                onclick="selectShip(this, 0)"
+              >
+                <input type="radio" name="ship" class="d-none" checked />
+                <i class="bi bi-truck pay-tab-icon"></i>
+                <div class="flex-grow-1">
+                  <div class="pay-tab-label">DHL Standard</div>
+                  <div class="pay-tab-sub">
+                    Estimated 7–14 business days · Worldwide
+                  </div>
+                </div>
+                <div class="product-price">$8.00</div>
+              </label>
+
+              <label
+                class="pay-tab d-flex align-items-center gap-3"
+                onclick="selectShip(this, 1)"
+              >
+                <input type="radio" name="ship" class="d-none" />
+                <i class="bi bi-lightning-charge pay-tab-icon"></i>
+                <div class="flex-grow-1">
+                  <div class="pay-tab-label">FedEx International Priority</div>
+                  <div class="pay-tab-sub">
+                    Estimated 3–5 business days · Worldwide
+                  </div>
+                </div>
+                <div class="product-price">$18.00</div>
+              </label>
+
+              <label
+                class="pay-tab d-flex align-items-center gap-3"
+                onclick="selectShip(this, 2)"
+              >
+                <input type="radio" name="ship" class="d-none" />
+                <i class="bi bi-rocket-takeoff pay-tab-icon"></i>
+                <div class="flex-grow-1">
+                  <div class="pay-tab-label">UPS Express Saver</div>
+                  <div class="pay-tab-sub">
+                    Estimated 1–2 business days · Worldwide
+                  </div>
+                </div>
+                <div class="product-price">$32.00</div>
+              </label>
+            </div>
+          </div>
+
+          <!-- PAYMENT METHOD -->
+          <div class="mb-5">
+            <div class="section-label">Payment Method</div>
+            <div class="d-flex flex-column gap-2">
+              <label
+                class="pay-tab selected d-flex align-items-center gap-3"
+                onclick="selectPay(this, 0)"
+              >
+                <input type="radio" name="pay" class="d-none" checked />
+                <i class="bi bi-credit-card-2-front pay-tab-icon"></i>
+                <div class="flex-grow-1">
+                  <div class="pay-tab-label">Credit / Debit Card</div>
+                  <div class="pay-tab-sub">
+                    Visa, Mastercard, Amex, Discover
+                  </div>
+                </div>
+              </label>
+
+              <!-- CC fields -->
+              <div id="ccDetail" class="row g-3 px-1 mt-0">
+                <div class="col-12">
+                  <label class="form-label">Card Number</label>
+                  <div class="position-relative">
+                    <input
+                      type="text"
+                      class="form-control pe-5"
+                      placeholder="0000 0000 0000 0000"
+                      maxlength="19"
+                      oninput="
+                        this.value = this.value
+                          .replace(/\D/g, '')
+                          .replace(/(.{4})/g, '$1 ')
+                          .trim()
+                      "
+                    />
+                    <i
+                      class="bi bi-credit-card position-absolute top-50 end-0 translate-middle-y me-3"
+                      style="color: var(--muted)"
+                    ></i>
+                  </div>
+                </div>
+                <div class="col-7">
+                  <label class="form-label">Expiry Date</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="MM / YY"
+                  />
+                </div>
+                <div class="col-5">
+                  <label class="form-label">CVV</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="•••"
+                    maxlength="4"
+                  />
+                </div>
+              </div>
+
+              <label
+                class="pay-tab d-flex align-items-center gap-3"
+                onclick="selectPay(this, 1)"
+              >
+                <input type="radio" name="pay" class="d-none" />
+                <i class="bi bi-paypal pay-tab-icon"></i>
+                <div class="flex-grow-1">
+                  <div class="pay-tab-label">PayPal</div>
+                  <div class="pay-tab-sub">
+                    Pay securely with your PayPal account
+                  </div>
+                </div>
+              </label>
+
+              <label
+                class="pay-tab d-flex align-items-center gap-3"
+                onclick="selectPay(this, 2)"
+              >
+                <input type="radio" name="pay" class="d-none" />
+                <i class="bi bi-phone pay-tab-icon"></i>
+                <div class="flex-grow-1">
+                  <div class="pay-tab-label">Apple Pay / Google Pay</div>
+                  <div class="pay-tab-sub">
+                    One-tap checkout with your device wallet
+                  </div>
+                </div>
+              </label>
+
+              <label
+                class="pay-tab d-flex align-items-center gap-3"
+                onclick="selectPay(this, 3)"
+              >
+                <input type="radio" name="pay" class="d-none" />
+                <i class="bi bi-calendar2-check pay-tab-icon"></i>
+                <div class="flex-grow-1">
+                  <div class="pay-tab-label">Buy Now, Pay Later</div>
+                  <div class="pay-tab-sub">
+                    4 interest-free payments · Klarna / Afterpay
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- /col-left -->
+
+        <!-- RIGHT: SUMMARY -->
+        <div class="col-lg-5">
+          <div class="summary-card">
+            <div class="section-label">Order Summary</div>
+
+
+             <div class="product-line">
+              <div class="product-img">
+                <img style="width: 60px;" src="img-koleksi/midnight noir tuxedo.png" alt="">
+              </div>
+              <div class="flex-grow-1">
+                <div class="product-name">Midnight Noir Tuxedo</div>
+                <div class="product-variant">Men Suite</div>
+                <div class="product-qty">Qty: 1 </div>
+              </div>
+              <div class="product-price">$800.50</div>
+            </div>
+
+             <div class="product-line">
+              <div class="product-img">
+                <img style="width: 60px;" src="img-koleksi/Belted Double-Breasted Cape Blazer.png" alt="">
+              </div>
+              <div class="flex-grow-1">
+                <div class="product-name">Belted Double-Breasted Cape Blazer</div>
+                <div class="product-variant">Women Suite</div>
+                <div class="product-qty">Qty: 2 </div>
+              </div>
+              <div class="product-price">$650.00</div>
+            </div>
+            
+             <div class="product-line">
+              <div class="product-img">
+                <img style="width: 60px;" src="img-koleksi/Velvet Dinner Tuxedo.png" alt="">
+              </div>
+              <div class="flex-grow-1">
+                <div class="product-name">Velvet Dinner Tuxedo</div>
+                <div class="product-variant">Men Suite</div>
+                <div class="product-qty">Qty: 1 </div>
+              </div>
+              <div class="product-price">$720.00</div>
+            </div>
+            
+            <!-- <div id="orderItemsContainer">
+              <div class="py-4 text-center empty-summary">
+                <i
+                  class="bi bi-bag d-block mb-2"
+                  style="font-size: 2rem; color: var(--border)"
+                ></i>
+                Your cart is empty.
+              </div>
+            </div> -->
+
+            <!-- TOTALS -->
+            <div class="summary-line">
+              <span>Subtotal</span><span id="subtotalAmt">$0.00</span>
+            </div>
+            <div class="summary-line">
+              <span>Shipping</span><span id="shipCost">$8.00</span>
+            </div>
+            <div
+              class="summary-line"
+              id="discountLine"
+              style="display: none; color: var(--gold-lt)"
+            >
+              <span>Promo Discount</span><span id="discountAmt">-$0.00</span>
+            </div>
+            <div class="summary-total">
+              <span>Total</span>
+              <span class="total-amount" id="grandTotal">$8.00</span>
+            </div>
+
+            <!-- CTA -->
+            <button class="btn-checkout mt-4" onclick="placeOrder()">
+              <i class="bi bi-lock me-2"></i>Confirm &amp; Pay
+            </button>
+
+            <div class="text-center mt-3 secure-badge">
+              <i class="bi bi-shield-check me-1"></i>
+              Secure &amp; SSL-encrypted transaction
+            </div>
+
+            <div class="d-flex justify-content-center gap-3 mt-3">
+              <i
+                class="bi bi-stripe"
+                style="font-size: 1.4rem; color: var(--muted)"
+              ></i>
+              <i
+                class="bi bi-paypal"
+                style="font-size: 1.4rem; color: var(--muted)"
+              ></i>
+              <i
+                class="bi bi-credit-card"
+                style="font-size: 1.4rem; color: var(--muted)"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <!-- /col-right -->
+      </div>
+    </div>
+
+    <!-- SUCCESS MODAL -->
+    <div
+      class="modal fade"
+      id="successModal"
+      tabindex="-1"
+      data-bs-backdrop="static"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-4">
+          <div class="d-flex flex-column align-items-center">
+            <div class="success-icon"><i class="bi bi-check-lg"></i></div>
+            <div class="success-title">Order Placed!</div>
+            <p
+              class="mt-2 mb-1"
+              style="font-size: 0.85rem; color: var(--muted)"
+            >
+              Your Order Number
+            </p>
+            <div class="order-code" id="orderNumber">#ELN-2026-00001</div>
+            <p
+              style="
+                font-size: 0.82rem;
+                color: var(--muted);
+                max-width: 320px;
+                line-height: 1.7;
+              "
+            >
+              Thank you for shopping at
+              <strong style="color: var(--cream)">Elanor</strong>. A
+              confirmation has been sent to your email. We'll begin processing
+              your order shortly.
+            </p>
+            <div class="d-flex gap-2 mt-3 flex-wrap justify-content-center">
+              <a
+                href="index.html"
+                class="btn-checkout"
+                style="width: auto; padding: 0.7rem 1.6rem; text-decoration: none;"
+                onclick="window.location.reload()"
+              >
+                <i class="bi bi-house me-2"></i>Back to Home
+              </a>
+              <a href="berhasil.html" style="text-decoration: none;" class="btn-outline-gold">
+                <i class="bi bi-bag me-2"></i>View Payment Receipt
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      /* ─────────────────────────────────────────────
+   ORDER SUMMARY INTEGRATION API
+   ─────────────────────────────────────────────
+   Import this page in an iframe or call these
+   functions from a parent / sibling script.
+
+   ElanorCheckout.setItems(items)
+     items: Array of {
+       name:    string,
+       variant: string  (optional),
+       qty:     number,
+       price:   number  (per unit, USD),
+       icon:    string  (optional Bootstrap icon class, e.g. 'bi-bag')
+     }
+
+   ElanorCheckout.clear()   → empties summary
+   ──────────────────────────────────────────── */
+      const ElanorCheckout = (() => {
+        let _items = [];
+        let _subtotal = 2820.5;
+
+        const fmt = (n) => "$" + parseFloat(n).toFixed(2);
+
+        function renderItems() {
+          const container = document.getElementById("orderItemsContainer");
+          if (!_items.length) {
+            container.innerHTML = `
+        <div class="py-4 text-center empty-summary">
+          <i class="bi bi-bag d-block mb-2" style="font-size:2rem;color:var(--border)"></i>
+          Your cart is empty.
+        </div>`;
+            updateTotal();
+            return;
+          }
+          container.innerHTML = _items
+            .map(
+              (item) => `
+      <div class="product-line">
+        <div class="product-img">
+          <i class="bi ${item.icon || "bi-bag"}"></i>
+        </div>
+        <div class="flex-grow-1">
+          <div class="product-name">${item.name}</div>
+          ${item.variant ? `<div class="product-variant">${item.variant}</div>` : ""}
+          <div class="product-qty">Qty: ${item.qty}</div>
+        </div>
+        <div class="product-price">${fmt(item.price * item.qty)}</div>
+      </div>`,
+            )
+            .join("");
+          updateTotal();
+        }
+
+        return {
+          /* Set all cart items at once and re-render */
+          setItems(items) {
+            _items = items || [];
+            _subtotal = _items.reduce((s, i) => s + i.price * i.qty, 0);
+            renderItems();
+          },
+          /* Clear cart */
+          clear() {
+            this.setItems([]);
+          },
+          /* Read subtotal (used by updateTotal) */
+          get subtotal() {
+            return _subtotal;
+          },
+        };
+      })();
+
+      /* ── SHIPPING ── */
+      const shipCosts = { 0: 8, 1: 18, 2: 32 };
+      let shipIdx = 0,
+        discount = 0;
+
+      function selectShip(el, idx) {
+        document
+          .querySelectorAll('[name="ship"]')
+          .forEach((r) => r.closest(".pay-tab").classList.remove("selected"));
+        el.classList.add("selected");
+        shipIdx = idx;
+        updateTotal();
+      }
+
+      /* ── PAYMENT ── */
+      function selectPay(el, idx) {
+        document
+          .querySelectorAll('[name="pay"]')
+          .forEach((r) => r.closest(".pay-tab").classList.remove("selected"));
+        el.classList.add("selected");
+        document.getElementById("ccDetail").style.display =
+          idx === 0 ? "" : "none";
+      }
+
+          /* ── TOTALS ── */
+      function fmt(n) {
+        return "$" + parseFloat(n).toFixed(2);
+      }
+
+      function updateTotal() {
+        const ship = shipCosts[shipIdx];
+        const sub = ElanorCheckout.subtotal;
+        const total = sub + ship - discount;
+        document.getElementById("subtotalAmt").textContent = fmt(sub);
+        document.getElementById("shipCost").textContent = fmt(ship);
+        document.getElementById("grandTotal").textContent = fmt(
+          Math.max(total, ship),
+        );
+        const dl = document.getElementById("discountLine");
+        if (discount > 0) {
+          dl.style.display = "";
+          document.getElementById("discountAmt").textContent =
+            "-" + fmt(discount);
+        } else {
+          dl.style.display = "none";
+        }
+      }
+
+      /* ── PLACE ORDER ── */
+      function placeOrder() {
+        /* Generate a random order number */
+        const num = String(Math.floor(Math.random() * 90000) + 10000);
+        document.getElementById("orderNumber").textContent = "#ELN-2026-" + num;
+        new bootstrap.Modal(document.getElementById("successModal")).show();
+      }
+    </script>
+  </body>
+</html>

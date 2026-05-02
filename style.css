@@ -1,0 +1,415 @@
+
+.logo {
+  font-family: "Recursive", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 300 !important;
+  font-style: normal !important;
+  font-variation-settings:
+    "slnt" 0,
+    "CASL" 0,
+    "CRSV" 0.5,
+    "MONO" 0 !important;
+}
+* {
+  font-family: "Playfair", serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 100 !important;
+  font-style: normal !important;
+  font-variation-settings: "wdth" 87.5 !important;
+}
+p {
+  font-size: 18px;
+}
+
+.hero-section p {
+  font-size: 24px;
+}
+.hero-section h1 {
+  color: #c9a84c;
+  font-size: 90px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.354);
+}
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+
+}
+
+.hero-bg {
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  margin-top: 3rem;
+}
+
+/* Konten di atas gambar */
+.hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  color: var(--mid);
+}
+.btn {
+  border-radius: 2px !important;
+}
+.btn-secondary {
+  color: rgb(34, 34, 33) !important;
+}
+.bg-dark {
+  background: #111110 !important;
+  color: white!important;
+}
+.bg-nav {
+  background: #11111009 !important;
+}
+.icon {
+  width: 60px;
+}
+.card {
+  border-radius: 1px!important;
+}
+.card-hover {
+  transition: all 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5rem 5rem rgba(0, 0, 0, 2);
+}
+.modal-content {
+  background: var(--mid);
+  color: var(--cream);
+}
+:root {
+  --dark: ;
+  --mid: #1c1c1a;
+  --border: #2e2e2b;
+  --gold: #c9a84c;
+  --gold-lt: #e2c97e;
+  --cream: #f5f0e8;
+  --muted: #7a7870;
+}
+
+/* Brand */
+.navbar-brand {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--cream) !important;
+  padding-left: 1rem;
+}
+.nav-link {
+  color: var(--cream) !important;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+}
+.nav-link:hover {
+  color: var(--gold-lt) !important;
+}
+
+/* Section heading */
+.section-label {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cream);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.55rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Dark-theme form overrides (Bootstrap forms are light by default) */
+.form-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cream);
+  margin-bottom: 0.35rem;
+}
+.form-control,
+.form-select {
+  background: var(--mid) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--cream) !important;
+  border-radius: 0 !important;
+  font-family: "Jost", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--gold) !important;
+  box-shadow: 0 0 0 2px rgba(201, 168, 76, 0.15) !important;
+}
+.form-control::placeholder {
+  color: var(--border);
+}
+.form-select option {
+  background: var(--mid);
+}
+.form-check-input {
+  background-color: var(--mid);
+  border-color: var(--border);
+}
+.form-check-input:checked {
+  background-color: var(--gold);
+  border-color: var(--gold);
+}
+.form-check-label {
+  font-size: 0.8rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
+/* Selection tabs */
+.pay-tab {
+  border: 1px solid var(--border);
+  padding: 0.85rem 1.1rem;
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+  border-radius: 0;
+}
+.pay-tab.selected {
+  border-color: var(--gold);
+  background: rgba(201, 168, 76, 0.06);
+}
+.pay-tab-icon {
+  font-size: 1.2rem;
+  color: var(--gold-lt);
+}
+.pay-tab-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--cream);
+}
+.pay-tab-sub {
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+/* Summary card */
+.summary-card {
+  background: var(--mid);
+  border: 1px solid var(--border);
+  padding: 1.8rem;
+  position: sticky;
+  top: 1.5rem;
+}
+.product-line {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.product-line:last-of-type {
+  border-bottom: none;
+}
+.product-img {
+  width: 60px;
+  height: 72px;
+  background: #2a2a27;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 1.3rem;
+}
+.product-name {
+  font-size: 0.85rem;
+  color: var(--cream);
+  font-family: Verdana, Geneva, Tahoma, sans-serif!important;
+  font-weight: normal;
+  font-size: small;
+}
+.product-variant,
+.product-qty {
+  font-size: 0.72rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif!important;
+  font-weight: normal;
+  font-size: small;
+}
+.product-qty {
+  margin-top: 0.15rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif!important;
+  font-weight: normal;
+  font-size: small;
+}
+.product-price {
+  font-size: 0.9rem;
+  color: var(--gold-lt);
+  white-space: nowrap;
+  font-family: Verdana, Geneva, Tahoma, sans-serif!important;
+  font-weight: normal;
+  font-size: small;
+}
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--muted);
+  padding: 0.3rem 0;
+}
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  font-family: Verdana, Geneva, Tahoma, sans-serif!important;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--cream);
+  border-top: 1px solid var(--border);
+  padding-top: 0.9rem;
+  margin-top: 0.4rem;
+}
+.total-amount {
+  font-family: Verdana, Geneva, Tahoma, sans-serif!important;
+  color: var(--gold-lt);
+}
+.empty-summary {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+/* Promo */
+.promo-input .form-control {
+  border-right: none !important;
+}
+.btn-promo {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-left: none;
+  color: var(--gold);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.7rem 1rem;
+  white-space: nowrap;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+.btn-promo:hover {
+  background: rgba(201, 168, 76, 0.1);
+  color: var(--gold-lt);
+}
+
+/* Buttons */
+.btn-checkout {
+  background: var(--gold);
+  color: var(--dark);
+  border: none;
+  border-radius: 0;
+  padding: 1rem 2rem;
+  font-family: "Jost", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 100%;
+  transition:
+    background 0.2s,
+    transform 0.15s;
+}
+.btn-checkout:hover {
+  background: var(--gold-lt);
+  color: var(--dark);
+  transform: translateY(-1px);
+}
+.btn-checkout:active {
+  transform: translateY(0);
+}
+.btn-outline-gold {
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  border-radius: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.65rem 1.6rem;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.btn-outline-gold:hover {
+  background: var(--gold);
+  color: var(--dark);
+}
+
+/* Misc */
+.back-link {
+  font-size: 0.75rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color 0.2s;
+}
+.back-link:hover {
+  color: var(--cream);
+}
+.secure-badge {
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+}
+.secure-badge i {
+  color: var(--gold);
+}
+
+/* Modal */
+#successModal .modal-content {
+  background: var(--mid);
+  border: 1px solid var(--border);
+  border-radius: 0;
+  color: var(--cream);
+  text-align: center;
+}
+.success-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(201, 168, 76, 0.12);
+  border: 1px solid var(--gold);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--gold);
+  margin-bottom: 1.2rem;
+}
+.success-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+.order-code {
+  background: var(--dark);
+  border: 1px solid var(--border);
+  padding: 0.5rem 1.2rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  color: var(--gold-lt);
+  display: inline-block;
+  margin: 0.5rem 0 1.2rem;
+}
+
+@media (max-width: 991px) {
+  .summary-card {
+    position: static;
+    margin-top: 2rem;
+  }
+}
