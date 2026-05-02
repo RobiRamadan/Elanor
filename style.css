@@ -1,4 +1,6 @@
-
+a {
+  text-decoration: none;
+}
 .logo {
   font-family: "Recursive", sans-serif !important;
   font-optical-sizing: auto !important;
